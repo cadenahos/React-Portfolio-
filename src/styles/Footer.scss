@@ -1,0 +1,14 @@
+@import 'vars';
+
+footer {
+    background-color: var(--secundary);
+    text-align: center;
+    text-justify: ce;
+    color: var(--clear);
+}
+.footer-info{
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
