@@ -1,0 +1,99 @@
+@import 'vars';
+
+.menu {
+    background-image: linear-gradient(to top, var(--primary), rgba(88, 87, 215, 0.96), var(--third));
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+
+.menu-pages {
+    display: flex;
+    align-self: center;
+    justify-content: space-evenly;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.menu-pages img {
+    width: 60px;
+    height: 50px;
+    margin: auto;
+}
+
+.menu-pages h3 {
+    color: var(--clear);
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+}
+
+.menu-movile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: flex-end;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    border-radius: 90px 0 0 90px;
+    height: 60%;
+    width: 60px;
+    cursor: pointer;
+    z-index: 50;
+    background-color: var(--clear);
+    border: 2px solid var(--secundary);
+    border-right: none;
+    transition: transform 1s ease;
+}
+.menu-movile:hover{
+    transform: scale(5);
+    transition: transform 0.5s ease;
+}
+.menu-movile:hover >.menu-movile-container{
+    transform: scale(0.2);
+    transition: transform 0.5 ease;
+}
+.line-1,
+.line-2,
+.line-3 {
+    height: var(--menu-icon-line-height);
+    width: 40px;
+    margin: 5px 15px;
+    background-color: var(--secundary);
+    border-radius: 3px;
+    box-shadow: 1px 1px 6px 0px rgb(26 24 24);
+}
+
+.line-1 {
+    animation: animate-line-1 .7s cubic-bezier(0.30, 1, 0.70, 1) forwards;
+}
+
+.line-2 {
+    animation: animate-line-2 .7s cubic-bezier(0.30, 1, 0.70, 1) forwards;
+}
+
+.line-3 {
+    animation: animate-line-3 .7s cubic-bezier(0.30, 1, 0.70, 1) forwards;
+}
+
+.menu-logo {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-left: 30%;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+}
+
+.menu-logo img {
+    width: 150px;
+    height: 150px;
+}

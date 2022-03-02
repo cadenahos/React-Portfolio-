@@ -1,0 +1,114 @@
+@import 'vars';
+section {
+    margin: 30px 0px;
+    margin-left: 16px;
+}
+
+section>h3 {
+    color: var(--secundary);
+    font-weight: bold;
+    font-size: 16px;
+    margin: 16px 0;
+}
+
+.bio-description {
+    color: var(--clear);
+    font-size: var(--par);
+}
+
+.bio {
+    margin: 0px 16px;
+}
+
+.button--primary {
+    border-radius: 10px;
+    color: var(--secundary);
+    border: 1px solid var(--secundary);
+}
+
+.projects {
+    padding: 10px 0;
+}
+
+.projects-container {
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    gap: 16px;
+    padding: 0 16px 20px 0;
+}
+
+.card {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--clear);
+    height: 180px;
+    width: 230px;
+    min-width: 230px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 0 var(--dark);
+    padding: 10px 5px;
+}
+
+.card-presentation {
+    width: 50%;
+}
+
+.card-presentation--title {
+    color: var(--third);
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.card-presentation>img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.card-presentation--project--lenguages>h4 {
+    margin: 0;
+    font-size: 12px;
+    color: var(--third);
+    text-align: center;
+
+}
+
+.card-presentation--project--lenguages--icons>img {
+    width: 20%;
+    height: 25%;
+    padding: 5px 5px;
+}
+
+.card-description {
+    width: 50%;
+    padding: 0 5px;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    /* margin-bottom: 5px; */
+}
+
+.card-description p {
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.organizations {
+    padding: 10px 0;
+}
+
+.organizations-container {
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    gap: 16px;
+    padding: 0 16px 20px 0;
+}

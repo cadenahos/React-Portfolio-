@@ -1,7 +1,25 @@
-$base-color: #219ad1;
-$clear-color: #ffffff;
+@import 'vars';
 
-body{
-    background-color: $base-color;
-    color: $clear-color;
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary);
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+header {
+    height: 234px;
+    margin-bottom: 70px;
+}
+a{
+    text-decoration: none;
+}
+
+h3 {
+    margin: 0;
+}
+
+h4 {
+    margin: 0;
 }
