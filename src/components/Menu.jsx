@@ -4,9 +4,9 @@ import '@styles/Menu.scss';
 const Menu = () => {
     return ( 
             <ul className='nav'>
-                <li>Home</li>
-                <li>Contact me</li>
-                <li>Block</li>
+                <li><a>Home</a></li>
+                <li><a>Contact me</a></li>
+                <li><a>Blog</a></li>
             </ul>
     );
 };

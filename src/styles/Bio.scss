@@ -34,3 +34,13 @@
 .button--primary:active {
     border: 5px solid var(--third);
 }
+@media (min-width: 920px) {
+    .bio-container{
+        flex-wrap: nowrap;
+    }
+}
+@media (min-width: 620px) {
+    .bio-container{
+        flex-wrap: nowrap;
+    }
+}
