@@ -13,3 +13,9 @@
     gap: 16px;
     padding: 0 16px 20px 0;
 }
+@media (min-width: 920px) {
+    .organizations-container{
+        justify-content: center;
+        overflow-x:none;
+    } 
+}

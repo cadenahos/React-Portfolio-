@@ -11,3 +11,11 @@
     gap: 16px;
     padding: 0 16px 20px 0;
 }
+
+@media (min-width: 920px) {
+    .projects-container{
+        flex-wrap: wrap;
+        overscroll-behavior:initial;
+        overflow-x:visible;
+    } 
+}
