@@ -1,25 +1,23 @@
 import React from 'react';
+import MenuMovile from './MenuMovile';
+import Menu from './Menu';
+import useMediaQuery from '@hooks/UseMediaQuery';
 import portfolioLogo from '@logos/Logo-portfolio.svg';
 import githubLogo from '@logos/github.svg';
 import linkedinLogo from '@logos/linkedin.svg';
 import '@styles/Header.scss';
 
 const Header = () => {
+
+    const isDesktop = useMediaQuery('(min-width: 920px)');
     return (
         <header>
             <div className="menu">
                 <div className="menu-logo">
                     <img src={portfolioLogo} alt="Porfolio Logo"/>
                 </div>
-                <div className="menu-movile" id="menuContainer">
-                    <div className="menu-movile-container" id="menu">
-                        <div className="line-1 "></div>
-                        <div className="line-2 "></div>
-                        <div className="line-3 last "></div>
-                    </div>
-                    <div>
-
-                    </div>
+                <div className='menu-nav'>
+                    {isDesktop ? <Menu/> : <MenuMovile/>}
                 </div>
                 <div className="menu-pages">
                     <a href="">

@@ -1,0 +1,15 @@
+@import 'vars';
+
+
+.organizations {
+
+}
+
+.organizations-container {
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    gap: 16px;
+    padding: 0 16px 20px 0;
+}

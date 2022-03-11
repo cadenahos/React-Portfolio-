@@ -1,0 +1,30 @@
+@import 'vars';
+
+
+.menu-movile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 90px 0 0 90px;
+    height: 100px;
+    width: 70px;
+    cursor: pointer;
+    z-index: 50;
+    background-color: var(--clear);
+    border: 2px solid var(--secundary);
+    border-right: none;
+    margin: 0;
+}
+
+.line-1,
+.line-2,
+.line-3 {
+    height: var(--menu-icon-line-height);
+    width: 30px;
+    margin: 5px 15px;
+    background-color: var(--secundary);
+    border-radius: 3px;
+    box-shadow: 1px 1px 6px 0px rgb(26 24 24);
+}
+

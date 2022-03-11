@@ -14,65 +14,7 @@ section {
     background-color: var(--secundary);
     height: 3px;
 }
-// .home-section-title:after {
-//     background-color: var(--secundary);
-//     content: "";
-//     display: inline-block;
-//     height: 3px;
-//     position: relative;
-//     vertical-align: middle;
-//     width: 100%;
-//     left: 0.5em;
-//     margin-right: -100%;
-//     z-index: -2;
-// }
-.bio{
-    background-color: var(--clear);
-    color: var(--dark);
-}
-.bio-container{
-    display: flex;
-    flex-wrap: wrap;
-}
-.bio-description {
-    border: 3px solid var(--dark);
-    border-radius: 10px;
-    margin-top: 10px;
-    padding: 10px;
-    font-size: var(--par);
-    align-self: center;
-    font-size: 18px;
-}
-.bio-fotoPerfil{
-    border-radius: 50%;
-    margin: 0 30px;
-    border: 3px solid var(--dark);
-    width: 100%;
-}
 
-.button--primary {
-    border-radius: 10px;
-    color: var(--secundary);
-    border: 2px solid var(--secundary);
-    height: 30px;
-    cursor: pointer;
-}
-.button--primary:active {
-    border: 5px solid var(--third);
-}
-
-.projects {
-
-}
-
-.projects-container {
-    display: flex;
-    overflow-x: scroll;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
-    gap: 16px;
-    padding: 0 16px 20px 0;
-}
 
 .card {
     display: flex;
@@ -139,17 +81,4 @@ section {
     font-size: 12px;
     overflow: hidden;
     text-overflow: ellipsis;
-}
-
-.organizations {
-
-}
-
-.organizations-container {
-    display: flex;
-    overflow-x: scroll;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
-    gap: 16px;
-    padding: 0 16px 20px 0;
 }
