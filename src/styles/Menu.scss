@@ -11,6 +11,11 @@
     color: var(--grey);
     cursor: pointer;
 }
+
+.nav a:visited {
+    color: var(--grey);
+    cursor: pointer;
+}
 .nav li:hover a::before{
     position: absolute;
     content: '';

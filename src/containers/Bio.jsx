@@ -12,13 +12,9 @@ const Bio = () => {
         <div className="bio-container">
             <img className="bio-fotoPerfil" src={fotoperfil} alt="foto perfil"/>
             <div className="bio-description">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, architecto. Minima culpa illo praesentium
-                    qui delectus temporibus rem quidem modi aliquam impedit, repudiandae, sequi blanditiis eos sit dolorum
-                    nostrum repellendus.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio repellendus fugiat at expedita ab
-                    praesentium sequi, tempore quam voluptate quaerat ratione eveniet non, architecto dolorum ex blanditiis
-                    molestias, consequuntur voluptatem.
+                <p>                  
+                    I am the type of person who feel happy working with modern technology. I love to work in graphic interfaces and approach new ways of solving problems.
+                    I consider myself an avid learner who enjoy reading technical blogs and books in subject that I am interested as, frontend, algorithms, and Management methodologies.
                 </p>
                 <button className="button--primary">More info ...</button>
             </div>
