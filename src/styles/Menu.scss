@@ -26,6 +26,16 @@
     width: 15px;
 }
 
+.nav a.active::before{
+    position: absolute;
+    content: '';
+    background-color: currentColor;
+    border-radius: 2px;
+    top: 78px;
+    height: 5px;
+    width: 15px;
+}
+
 li{
     list-style: none;
 }

@@ -1,12 +1,28 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import '@styles/Menu.scss';
 
 const Menu = () => {
+    let activeStyle = {
+        color: "blue",
+        
+    };
     return ( 
             <ul className='nav'>
-                <li><a href='/'>Home</a></li>
-                <li><a href='/contact-us'>Contact me</a></li>
-                <li><a href='/blog'>Blog</a></li>
+                <li>
+                    <NavLink 
+                        to='/'
+                    >
+                        Home
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink 
+                        to='/contact-us'
+                    >Contact me
+                    </NavLink>
+                </li>
+                {/* <li><NavLink to='/blog'>Blog</NavLink></li> */}
             </ul>
     );
 };
