@@ -1,6 +1,6 @@
 import React from 'react';
 import '@styles/Projects.scss';
-import Card from '../components/Card';
+import { Card } from '@components/Card';
 
 const Projects = () => {
     const projectList = [

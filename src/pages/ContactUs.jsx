@@ -1,10 +1,15 @@
 import React from 'react';
+import { CardForm } from '@components/Card';
 
 const ContactUs = () => {
     return (
-        <div>
-            <h1>Contact Us</h1>
+        <section className='contact'>
+        <div className="home-section-title" >
+            <h3 >Contact Me</h3>
+            <div></div>
         </div>
+        <CardForm/>
+        </section>
     );
 };
 

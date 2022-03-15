@@ -14,7 +14,7 @@ const Bio = () => {
             <div className="bio-description">
                 <p>                  
                     I am the type of person who feel happy working with modern technology. I love to work in graphic interfaces and approach new ways of solving problems.
-                    I consider myself an avid learner who enjoy reading technical blogs and books in subject that I am interested as, frontend, algorithms, and Management methodologies.
+                    I consider myself an avid learner who enjoy reading technical blogs and books in subject that I am interested as, frontend, algorithms, and Management.
                 </p>
                 <button className="button--primary">More info ...</button>
             </div>
