@@ -2,13 +2,13 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import '@styles/Menu.scss';
 
-const Menu = () => {
+const Menu = (props) => {
     let activeStyle = {
         color: "blue",
         
     };
     return ( 
-            <ul className='nav'>
+            <ul className={(props.movile === true) ? 'nav-movile':'nav'}>
                 <li>
                     <NavLink 
                         to='/'

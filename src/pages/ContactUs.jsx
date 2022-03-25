@@ -8,7 +8,7 @@ const ContactUs = () => {
             <h3 >Contact Me</h3>
             <div></div>
         </div>
-        <CardForm/>
+        {/* <CardForm/> */}
         </section>
     );
 };

@@ -2,6 +2,7 @@
 
 
 .menu-movile {
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,15 +17,65 @@
     border-right: none;
     margin: 0;
 }
+.menu-movile-active {
+    display: block;
+    float: left;
+    border-radius: 200px 0 0 200px;
+    width: 300px;
+    height: 313px;
+    
+}
+.menu-movile-container{
+    margin: 0 auto;
+    width: 30px;
+    top: 30px;
+    .line-1,
+    .line-2,
+    .line-3 {
+        height: var(--menu-icon-line-height);
+        width: 100%;
+        margin: 5px 0;
+        background-color: var(--secundary);
+        border-radius: 3px;
+        box-shadow: 1px 1px 6px 0px rgb(26 24 24);
+    }
+}
 
+
+.menu-movile-container-active{
+    position: relative;
+    left: 111px;
+    margin: 0 auto;
+    width: 30px;
+    top: 30px;
+}
+.menu-movile-container-active::before{
+    position: absolute;
+    content: "";
+    width: 141px;
+    height: 4px;
+    background-color: var(--secundary);
+    right: 44px;
+    top: 22px;
+    box-shadow: 1px 1px 6px 0px #1a1818;
+}
+.menu-movile-active::after{
+    position: absolute;
+    content: "";
+    background-color: var(--secundary);
+    width: 4px;
+    height: 216px;
+    right: 35px;
+    bottom: 26px;
+    box-shadow: 1px 1px 6px 0px #1a1818;
+}
 .line-1,
 .line-2,
 .line-3 {
     height: var(--menu-icon-line-height);
-    width: 30px;
-    margin: 5px 15px;
+    width: 100%;
+    margin: 5px 0;
     background-color: var(--secundary);
     border-radius: 3px;
     box-shadow: 1px 1px 6px 0px rgb(26 24 24);
 }
-

@@ -20,13 +20,13 @@ const Header = () => {
                     {isDesktop ? <Menu/> : <MenuMovile/>}
                 </div>
                 <div className="menu-pages">
-                    <a href="">
+                    <a href="https://github.com/cadenahos/" target="_blank">
                         <div>
                             <img src={githubLogo} alt="Github"/>
                             <h3>Github</h3>
                         </div>
                     </a>
-                    <a href="">
+                    <a href="https://www.linkedin.com/in/juan-pablo-cadena-bahos-242758b2/" target="_blank">
                         <div>
                             <img src={linkedinLogo} alt=""/>
                             <h3>linkedin</h3>

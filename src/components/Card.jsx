@@ -9,8 +9,10 @@ const Card = () => {
     return (
         <div className="card">
             <div className="card-presentation card-presentation--project">
+            <a href='https://cadenahos.github.io/todo-machine/' target="_blank">    
                 <h4 className="card-presentation--title">Cultural Magazine</h4>
-                <img src={mookImage} alt="magazine" />
+                <img className='card-presentation-img'src={mookImage} alt="magazine" />
+            </a>
                 <div className="card-presentation--project--lenguages">
                     <h4>Languages</h4>
                     <div className="card-presentation--project--lenguages--icons">
@@ -66,7 +68,6 @@ const CardForm = () => {
         </div>
     </div>
     );
-   
 }
 
 export  {
