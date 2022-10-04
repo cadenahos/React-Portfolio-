@@ -4,54 +4,82 @@
     background-color: var(--clear);
     color: var(--dark);
     padding: 30px;
+    height: 630px;
+}
+.bio-hello{
+    color: var(--primary);
+    font-size: 30px;
+    font-weight: 700;
 }
 .bio-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-content: center;
+   
 }
 .bio-description {
-    width: 60%;
     border: 3px solid var(--dark);
     border-radius: 10px;
-    margin-top: 10px;
-    padding: 10px;
+    padding: 10%;
     font-size: var(--par);
     align-self: center;
-    font-size: 18px;
-    max-height: 300px;
-    
+    font-size: 20px;
+    height: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+   
 }
 .bio-description > p{
     overflow: hidden;
-    max-height: 230px;
     text-overflow: ellipsis;
 }
-.bio-fotoPerfil{
-    border-radius: 50%;
-    margin: 0 30px;
-    border: 3px solid var(--dark);
-    width: 100%;
-    max-width: 200px;
-}
-
-.button--primary {
-    border-radius: 10px;
-    color: var(--secundary);
-    border: 2px solid var(--secundary);
-    height: 30px;
-    cursor: pointer;
-}
-.button--primary:active {
-    border: 5px solid var(--third);
-}
+// .bio-fotoPerfil{
+//     border-radius: 50%;
+//     border: 3px solid var(--dark);
+//     width: 100%;
+//     max-width: 200px;
+// }
+.typewrite-hello {
+    font-size: 70px;
+    line-height: 78px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+  }
+// .button--primary {
+//     border-radius: 10px;
+//     color: var(--secundary);
+//     border: 2px solid var(--secundary);
+//     height: 30px;
+//     cursor: pointer;
+// }
+// .button--primary:active {
+//     border: 5px solid var(--third);
+// }
 @media (min-width: 920px) {
     .bio-container{
         flex-wrap: nowrap;
+    }
+    .button--primary {
+        border-radius: 10px;
+        color: var(--secundary);
+        border: 2px solid var(--secundary);
+        height: 50px;
+        width: 150px;
+        cursor: pointer;
+        font-size: 25px;
     }
 }
 @media (min-width: 620px) {
     .bio-container{
         flex-wrap: nowrap;
     }
+    .bio-description {
+        font-size: 40px;
+        height: 269px;
+    }
+    .bio-hello{
+        font-size: 80px; 
+    }
+  
 }
