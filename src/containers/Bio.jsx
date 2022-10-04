@@ -25,7 +25,7 @@ const Bio = () => {
       .callFunction(() => {
         console.log('String typed out!');
       })
-      .pauseFor(2500)
+      .pauseFor(5500)
       .deleteAll()
       .callFunction(() => {
         console.log('All strings were deleted');
