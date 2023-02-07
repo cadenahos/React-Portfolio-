@@ -3,72 +3,96 @@
 .bio{
     background-color: var(--clear);
     color: var(--dark);
-    padding: 30px;
-    height: 630px;
+    padding: 30px 15px;
+    height: 130vh;
 }
 .bio-hello{
     color: var(--primary);
     font-size: 30px;
     font-weight: 700;
+    text-align: center;
+    height: 60%;
 }
 .bio-container{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-   
+    text-overflow: ellipsis;
 }
 .bio-description {
     border: 3px solid var(--dark);
     border-radius: 10px;
-    padding: 10%;
+    padding: 15%;
     font-size: var(--par);
-    align-self: center;
+    text-align: center;
     font-size: 20px;
     height: 300px;
     overflow: hidden;
-    text-overflow: ellipsis;
+    
    
 }
 .bio-description > p{
     overflow: hidden;
     text-overflow: ellipsis;
 }
-// .bio-fotoPerfil{
-//     border-radius: 50%;
-//     border: 3px solid var(--dark);
-//     width: 100%;
-//     max-width: 200px;
-// }
+
 .typewrite-hello {
     font-size: 70px;
     line-height: 78px;
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
   }
-// .button--primary {
-//     border-radius: 10px;
-//     color: var(--secundary);
-//     border: 2px solid var(--secundary);
-//     height: 30px;
-//     cursor: pointer;
-// }
-// .button--primary:active {
-//     border: 5px solid var(--third);
-// }
+  .button--primary {
+    position: absolute;
+    left: 34%;
+    bottom: 5%;
+    background-color: #e1ecf4;
+    border-radius: 5px;
+    border: 1px solid var(--dark);
+    height: 10%;
+    width: 30%;
+    box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+    box-sizing: border-box;
+    color: var(--primary);
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.15385;
+    margin: 0;
+    outline: none;
+    padding: 8px .8em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+  }
+  .button--primary:hover,
+  .button--primary:focus {
+    background-color: #b3d3ea;
+    color: #2c5777;
+  }
+  
+  .button--primary:focus {
+    box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+  }
+  
+  .button--primary:active {
+    background-color: #a0c7e4;
+    box-shadow: none;
+    color: #2c5777;
+  }
 @media (min-width: 920px) {
     .bio-container{
         flex-wrap: nowrap;
     }
-    .button--primary {
-        border-radius: 10px;
-        color: var(--secundary);
-        border: 2px solid var(--secundary);
-        height: 50px;
-        width: 150px;
-        cursor: pointer;
-        font-size: 25px;
-    }
+
+      
 }
 @media (min-width: 620px) {
     .bio-container{

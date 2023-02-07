@@ -1,30 +1,20 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import '@styles/Menu.scss';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import "@styles/Menu.scss";
+import { menuProps } from "../Models/menuProps";
 
 const Menu = (props) => {
-    let activeStyle = {
-        color: "blue",
-        
-    };
-    return ( 
-            <ul className={(props.movile === true) ? 'nav-movile':'nav'}>
-                <li>
-                    <NavLink 
-                        to='/'
-                    >
-                        Home
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink 
-                        to='/contact-us'
-                    >Contact me
-                    </NavLink>
-                </li>
-                {/* <li><NavLink to='/blog'>Blog</NavLink></li> */}
-            </ul>
-    );
+  return (
+    <ul className={props.movile === true ? "nav-movile" : "nav"}>
+      {menuProps.map((item) => (
+        <li>
+          <NavLink to={item.to} key={item.to}>
+            {item.title}
+          </NavLink>
+        </li>
+      ))}
+    </ul>
+  );
 };
 
 export default Menu;
