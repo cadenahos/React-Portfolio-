@@ -18,7 +18,7 @@ const Bio = () => {
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
-                  .typeString(" Front-end Developer. Nonconformist")
+                  .typeString(" Front-end Developer. Nonconformist.")
                   .callFunction(() => {})
                   .pauseFor(500)
                   .start(500);
@@ -31,7 +31,6 @@ const Bio = () => {
           </p>
         </div>
       </div>
-      {/* <button className="button--primary">More info ...</button> */}
     </section>
   );
 };

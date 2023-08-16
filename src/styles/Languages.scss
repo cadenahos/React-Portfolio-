@@ -1,0 +1,39 @@
+@import 'vars';
+
+.lang{
+    background-color: var(--clear);
+    color: var(--dark);
+    padding: 30px 15px;
+    height: inherit;
+}
+
+.languages-container {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    .languges{
+        width: 300px;
+        height: 200px;
+        border: 2px solid var(--dark);
+        border-radius: 10px;
+    }
+}
+@media (min-width: 920px) {
+    .bio-container{
+        flex-wrap: nowrap;
+    }
+
+      
+}
+@media (min-width: 620px) {
+    .bio-container{
+        flex-wrap: nowrap;
+    }
+    .bio-description {
+        font-size: 40px;
+    }
+    .bio-hello{
+        font-size: 80px; 
+    }
+  
+}
