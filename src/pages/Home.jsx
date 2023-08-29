@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <Bio />
-      <Languages />
+      {/* <Languages /> */}
       <Projects />
     </>
   );
