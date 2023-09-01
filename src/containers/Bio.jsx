@@ -1,5 +1,4 @@
 import React from "react";
-import fotoperfil from "@images/perfilcentrado.jpeg";
 import Typewriter from "typewriter-effect";
 import "@styles/Bio.scss";
 
@@ -8,11 +7,10 @@ const Bio = () => {
   return (
     <section className="bio">
       <div className="home-section-title">
-        <h3>biography</h3>
+        <h3>About</h3>
         <div></div>
       </div>
       <div className="bio-container">
-        {/* <img className="bio-fotoPerfil" src={fotoperfil} alt="foto perfil"/> */}
         <div className="bio-description">
           <div className="bio-hello">
             <Typewriter
@@ -26,8 +24,8 @@ const Bio = () => {
             />
           </div>
           <p>
-            I am the type of person who feel free working with modern
-            technology.
+            Looking for new challenges. Working as software developer mainly
+            with react, .net and node.js.
           </p>
         </div>
       </div>
