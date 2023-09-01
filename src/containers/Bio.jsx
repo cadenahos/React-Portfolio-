@@ -16,7 +16,7 @@ const Bio = () => {
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
-                  .typeString(" Front-end Developer. Nonconformist.")
+                  .typeString(" Front-end Developer. Open minded.")
                   .callFunction(() => {})
                   .pauseFor(500)
                   .start(500);
