@@ -3,7 +3,6 @@ import Typewriter from "typewriter-effect";
 import "@styles/Bio.scss";
 
 const Bio = () => {
-  React.useEffect(() => {}, []);
   return (
     <section className="bio">
       <div className="home-section-title">
@@ -16,7 +15,7 @@ const Bio = () => {
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
-                  .typeString(" Front-end Developer. Open minded.")
+                  .typeString("Full Stack Developer ")
                   .callFunction(() => {})
                   .pauseFor(500)
                   .start(500);
@@ -24,8 +23,7 @@ const Bio = () => {
             />
           </div>
           <p>
-            Looking for new challenges. Working as software developer mainly
-            with react, .net and node.js.
+            Looking for new challenges. Working with react, .net and node.js.
           </p>
         </div>
       </div>

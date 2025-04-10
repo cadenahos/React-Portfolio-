@@ -1,86 +1,65 @@
-@import 'vars';
+@import "vars";
 // Movile
 .menu {
-    height: 234px;
-    margin-bottom: 70px;
-    background-image: linear-gradient(to top, var(--primary), rgba(88, 87, 215, 0.96), var(--third));
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+  margin-bottom: 70px;
+
+  display: grid;
 }
 
 .menu-logo {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    margin-left: 30%;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 4;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-left: 30%;
 }
 
 .menu-logo img {
-    width: 130px;
-    height: 133px;
-}
-.menu-nav{
-    display: flex;
-    justify-content: end;
-    width: 100%;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 4;
-    grid-column-end: 5;
+  width: 130px;
+  height: 133px;
 }
 .menu-pages {
-    display: flex;
-    align-self: center;
-    justify-content: space-evenly;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 5;
+  display: flex;
+  align-self: center;
+  justify-content: space-evenly;
 }
 
-
 .menu-pages img {
-    width: 60px;
-    height: 50px;
-    margin: auto;
+  width: 60px;
+  height: 50px;
+  margin: auto;
 }
 
 .menu-pages h3 {
-    color: var(--clear);
-    text-align: center;
-    margin: 0;
-    font-weight: bold;
+  color: var(--clear);
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
 }
 
 // Desktop
 @media (min-width: 920px) {
-    .menu{
-        height: 100%;
-        margin-bottom: 10px;
-    }
-    .menu-logo {
-        grid-row-start: 1;
-        grid-row-end: 3;
-        grid-column-start: 1;
-        grid-column-end: 2;
-    }
-    .menu-nav{
-        justify-content: center;
-        align-self: center;
-        grid-row-start: 1;
-        grid-row-end: 3;
-        grid-column-start: 2;
-        grid-column-end: 4;
-    }
-    .menu-pages{
-        grid-row-start: 1;
-        grid-row-end: 3;
-        grid-column-start: 4;
-        grid-column-end: 5;
-    }
+  .menu {
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .menu-logo {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .menu-nav {
+    justify-content: center;
+    align-self: center;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+  .menu-pages {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 5;
+  }
 }
